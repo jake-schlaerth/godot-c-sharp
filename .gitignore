@@ -1,0 +1,38 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Godot-generated / editor data
+*.translation
+export_presets.cfg
+.import/
+.mono/
+data_*/
+mono_crash.*.json
+
+# Builds
+/builds/
+/build/
+/export/
+
+# .NET / C#
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.DotSettings.user
+*.userprefs
+[Ll]og/
+[Ll]ogs/
+*.log
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
