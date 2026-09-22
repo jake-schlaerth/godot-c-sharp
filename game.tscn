@@ -1,0 +1,44 @@
+[gd_scene format=4 uid="uid://24h2j5x06hek"]
+
+[ext_resource type="Script" path="res://Game.cs" id="1_feb5d"]
+[ext_resource type="PackedScene" path="res://player/player.tscn" id="2_fc0e3"]
+[ext_resource type="Texture2D" path="res://tilemap/tilemap.png" id="3_7jktm"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lbhrr"]
+texture = ExtResource("3_7jktm")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_6w6ra"]
+tile_size = Vector2i(64, 64)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_lbhrr")
+
+[node name="Game" type="Node2D" unique_id=1108196626]
+script = ExtResource("1_feb5d")
+
+[node name="Player" parent="." unique_id=973744022 instance=ExtResource("2_fc0e3")]
+position = Vector2(64, 0)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1773800056]
+position = Vector2(5, 0)
+tile_map_data = PackedByteArray("AAAAAAEAAAAAAAAAAAABAAEAAAABAAAAAAACAAEAAAABAAAAAAADAAEAAAABAAAAAAAEAAEAAAABAAAAAAAFAAEAAAABAAAAAAAGAAEAAAABAAAAAAAHAAEAAAABAAAAAAAHAAAAAAAAAAAAAAAHAP//AAAAAAAAAAAIAP//AAABAAAAAAAJAP//AAABAAAAAAAIAAAAAAABAAAAAAAJAAAAAAABAAAAAAAIAAEAAAABAAAAAAAJAAEAAAABAAAAAAD//wIAAAABAAAAAAD+/wMAAAABAAAAAAD9/wQAAAABAAAAAAD8/wUAAAABAAAAAAAGAAAAAAABAAAAAAAAAAIAAAABAAAAAAABAAIAAAABAAAAAAACAAIAAAABAAAAAAAFAAIAAAABAAAAAAAGAAIAAAABAAAAAAAHAAIAAAABAAAAAAAIAAIAAAABAAAAAAAEAAIAAAABAAAAAAADAAIAAAABAAAAAAD//wMAAAABAAAAAAAAAAMAAAABAAAAAAABAAMAAAABAAAAAAACAAMAAAABAAAAAAADAAMAAAABAAAAAAAEAAMAAAABAAAAAAAFAAMAAAABAAAAAAAGAAMAAAABAAAAAAAHAAMAAAABAAAAAAAIAAMAAAABAAAAAAA=")
+tile_set = SubResource("TileSet_6w6ra")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyv5kx8e0eed7"
-path="res://.godot/imported/tilemap.png-a42835adff49b70e6126c2868941420c.ctex"
+uid="uid://dqp635sg8io11"
+path="res://.godot/imported/winged_walk.png-29375cd87f468af7566a478ffdde6fdd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/tilemap/tilemap.png"
-dest_files=["res://.godot/imported/tilemap.png-a42835adff49b70e6126c2868941420c.ctex"]
+source_file="res://player/assets/winged/winged_walk.png"
+dest_files=["res://.godot/imported/winged_walk.png-29375cd87f468af7566a478ffdde6fdd.ctex"]
 
 [params]
 
